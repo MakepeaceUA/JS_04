@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой дневник</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+  <div class="container">
+    <header>
+      <h1>Мой дневник</h1>
+      <button id="toggle-theme">Изменить тему</button>
+    </header>
+
+    <form id="entry-form">
+      <input type="text" id="entry-title" placeholder="Заголовок" required />
+      <textarea id="entry-text" placeholder="Текст записи" required></textarea>
+      <button type="submit">Добавить запись</button>
+    </form>
+
+    <div id="entries" class="entries"></div>
+  </div>
+
+  <script src="project.js"></script>
+</body>
+</html>
